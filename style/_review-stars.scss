@@ -1,0 +1,62 @@
+// main: style.scss
+
+/*.rating-stars {
+  line-height: 1em;
+  position: relative;
+  margin: 0px auto;
+  height: 1em;
+  width: 5em;
+  display: inline-block;
+
+  .star{
+      display: inline-block;
+      line-height: 1em;
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      svg{ width: 0.8em; height: 0.8em; margin-top:-0.2em; fill: RGBA(0,0,0,.2);}
+  }
+  
+  .rating-stars-filled{
+      
+      position: absolute;
+      top:0;
+      width:85%;
+      height: 1em;
+      overflow: hidden;
+
+      .star {position: absolute;
+          svg{fill: orange;}
+      }
+  }
+  .rating-stars-backdrop{
+      fill: RGBA(0,0,0,.3);
+  }
+}*/
+
+$rating-star-color: $primary-color !default;
+.rating-stars { 
+  display: inline-block; 
+  position: relative; 
+  font-size: 2.5rem;
+  line-height: 1em;  
+  //margin: 0px auto;
+  //height: 1em;
+  //width: 5em;   
+}
+.rating-stars-filled { 
+  position: absolute; 
+  height: 100%; 
+  color: $rating-star-color; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  top:0;
+  width:70%;
+  //height: 1em;
+}
+.rating-stars-placeholders{ 
+  display: inline-block; 
+  color: rgba($rating-star-color, .4); 
+}
+
+
